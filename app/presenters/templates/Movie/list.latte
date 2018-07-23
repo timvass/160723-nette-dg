@@ -9,8 +9,8 @@
 {var $display = true}
 
 <ul n:if=$display>
-	<li n:foreach="$movies as $movie" n:class="$iterator->first ? first, $iterator->odd ? odd">
-		{$movie->name}({$movie->year})
+	<li n:foreach="$movies as $movie">
+		<a href="#" n:inner-if="$iterator->odd">{$movie->name}</a>
 	</li>
 </ul>
 
