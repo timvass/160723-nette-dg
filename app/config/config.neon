@@ -1,0 +1,21 @@
+parameters:
+	dns: 'mysql:dbname=movies;host=10.0.0.201'
+	user: 'root'
+	password: 'xxxx'
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	router: App\RouterFactory::createRouter
+
+	db: PDO(%dns%, %user%, %password%)
+
+
