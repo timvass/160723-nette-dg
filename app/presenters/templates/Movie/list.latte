@@ -9,7 +9,7 @@
 {var $display = true}
 
 <ul n:if=$display>
-	<li n:foreach="$movies as $movie" data-id="{$iterator->counter}">
+	<li n:foreach="$movies as $movie" n:class="$iterator->first ? first, $iterator->odd ? odd">
 		{$movie->name}({$movie->year})
 	</li>
 </ul>
