@@ -4,6 +4,7 @@ parameters:
 	password: 'xxxx'
 
 application:
+	#catchExceptions: yes #zobrazi error presenter
 	errorPresenter: Error
 	mapping:
 		*: App\*Module\Presenters\*Presenter
