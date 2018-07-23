@@ -29,7 +29,7 @@ class MoviePresenter extends Presenter
 //		require 'template.phtml';
 	}
 
-	public function renderDetail()
+	public function renderDetail($id)
 	{
 
 	}

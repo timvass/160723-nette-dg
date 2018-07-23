@@ -10,7 +10,7 @@
 
 <ul n:inner-foreach="$movies as $movie">
 	<li>
-		<a n:href="detail" n:tag-if="$iterator->odd">
+		<a n:href="detail $movie->id" n:tag-if="$iterator->odd">
 			{$movie->name|upper}
 		</a>
 		({$movie->year|money})
