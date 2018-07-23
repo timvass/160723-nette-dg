@@ -10,7 +10,7 @@
 
 <ul n:inner-foreach="$movies as $movie">
 	<li>
-		<a href="#" n:tag-if="$iterator->odd">{$movie->name}</a>
+		<a href="#" n:tag-if="$iterator->odd">{$movie->name|upper|truncate:12}</a>
 	</li>
 </ul>
 
