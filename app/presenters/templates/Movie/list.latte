@@ -13,8 +13,9 @@
 	{/foreach}
 </ul>
 
-<script>
-	var name = {$movie->name};
+<script n:syntax="double">
+	var name = {{$movie->name}};
+	if (true){alert(123)}
 </script>
 
 <footer>Copyright 2018</footer>
