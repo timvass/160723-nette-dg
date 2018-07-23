@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/MovieFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/MovieFacade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/presenters/MoviePresenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/presenters/MoviePresenter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" beforeDir="false" afterPath="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" afterDir="false" />
     </list>
@@ -16,50 +18,91 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RouterFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviePresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/presenters/MoviePresenter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-              <folding>
-                <element signature="e#34#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.latte" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/list.latte">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="36">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5207756">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="RouterFactory.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MoviePresenter.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/presenters/MoviePresenter.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="329">
+                  <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#34#56#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.latte" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/list.latte">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1656">
+                  <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/readme.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="36">
+                    <caret line="2" selection-start-line="2" selection-end-line="2" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="MoviePresenter.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/presenters/MoviePresenter.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="257">
+                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+                  <folding>
+                    <element signature="e#34#56#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieFacade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/model/MovieFacade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="41">
+                  <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#24#39#0#PHP" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="detail.latte" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/detail.latte">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,14 +117,15 @@
       <list>
         <option value="$PROJECT_DIR$/www/index.php" />
         <option value="$PROJECT_DIR$/app/bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Movie.list.latte" />
         <option value="$PROJECT_DIR$/app/config/config.neon" />
-        <option value="$PROJECT_DIR$/app/model/MovieFacade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/config.local.neon" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/model/MovieFacade.php" />
+        <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
+        <option value="$PROJECT_DIR$/app/presenters/templates/Movie/detail.latte" />
         <option value="$PROJECT_DIR$/app/presenters/MoviePresenter.php" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" />
       </list>
@@ -126,9 +170,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="229" />
+    <option name="x" value="378" />
     <option name="y" value="24" />
-    <option name="width" value="1371" />
+    <option name="width" value="1222" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -267,18 +311,18 @@
       <workItem from="1532356613670" duration="1910000" />
       <workItem from="1532358597407" duration="176000" />
       <workItem from="1532358792394" duration="3944000" />
-      <workItem from="1532363073055" duration="720000" />
+      <workItem from="1532363073055" duration="1734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13807000" />
+    <option name="totallyTimeSpent" value="14821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="24" width="1371" height="876" extended-state="4" />
+    <frame x="711" y="24" width="889" height="876" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1781132" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24192059" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -287,7 +331,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34362417" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34362417" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -518,13 +562,6 @@
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -556,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/MovieFacade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#24#39#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -573,10 +600,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/MovieFacade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#24#39#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/detail.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/MoviePresenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="329">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
             <element signature="e#34#56#0#PHP" expanded="true" />
           </folding>
@@ -585,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/list.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="1656">
+          <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
         </state>
       </provider>
     </entry>

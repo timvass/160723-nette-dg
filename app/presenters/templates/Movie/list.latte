@@ -3,23 +3,72 @@
 <title>Seznam filmů | Movies</title>
 <h1>Seznam filmů</h1>
 
-{var $count = 123} {* ha nulla az ertek, akkor nem jelenik meg a skladem*}
+{var $count = 123}
+
 {$count ? skladem}
 
 {var $display = true}
 
+
+
 <ul n:inner-foreach="$movies as $movie">
 	<li>
 		<a n:href="detail $movie->id" n:tag-if="$iterator->odd">
-			{$movie->name|upper}
+			{$movie->name|upper|truncate:12}
 		</a>
 		({$movie->year|money})
 	</li>
 </ul>
 
+
 <script n:syntax="double">
 	var name = {{$movie->name}};
-	if (true){alert(123)}
+	if (false){alert(123)}
 </script>
+
+{*
+<ul n:inner-foreach="$movies as $movie">
+	<li>
+		<a href="#" n:tag-if="$iterator->odd">{$movie->name}</a>
+	</li>
+</ul>
+
+<ul>
+	<li n:foreach="$movies as $movie" n:class="$iterator->first ? first, $iterator->odd ? odd">
+		{$movie->name}
+	</li>
+</ul>
+
+<ul>
+	<li n:foreach="$movies as $movie" data-id="{$iterator->counter}">
+		{$movie->name} {if $iterator->last}({$movie->year}){/if}
+	</li>
+</ul>
+
+<ul n:if=$display>
+	<li n:foreach="$movies as $movie">{$movie->name} ({$movie->year})</li>
+</ul>
+
+<ul n:if=$display>
+	{foreach $movies as $movie}
+		<li>{$movie->name} ({$movie->year})</li>
+	{/foreach}
+</ul>
+
+<ul>
+	{foreach $movies as $movie}
+		<li onclick="alert({$movie->name})">{$movie[name]} ({$movie[year] + 20 + rand()})</li>
+	{/foreach}
+</ul>
+
+
+<ul>
+	<?php foreach ($movies as $movie): ?>
+	<li title='<?=htmlspecialchars($movie['name'], ENT_QUOTES)?>'>
+	<?=htmlspecialchars($movie['name'])?>
+	(<?=htmlspecialchars($movie['year']) ?>)</li>
+	<?php endforeach ?>
+</ul>
+*}
 
 <footer>Copyright 2018</footer>

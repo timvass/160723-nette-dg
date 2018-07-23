@@ -25,4 +25,10 @@ class MovieFacade
 		//$db = Database::getInstance();
 		return $this->db->query('SELECT * FROM movie ORDER BY year');
 	}
+
+	public function getMovieById(int $id)
+	{
+		// 1 or id
+		return $this->db->fetch('SELECT * FROM movie WHERE id=?', $id);
+	}
 }

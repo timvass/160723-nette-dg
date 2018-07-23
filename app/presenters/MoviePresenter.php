@@ -24,13 +24,14 @@ class MoviePresenter extends Presenter
 		$this->template->addFilter('money', function ($val) {
 			return number_format($val, 2, ',', '');
 		});
-
-		//		dump($movies);
-//		require 'template.phtml';
 	}
 
-	public function renderDetail($id)
+	public function renderDetail(int $id)
 	{
-
+		$movie = $this->facade->getMovieById($id);
+		if(! $movie) {
+			$this->error();
+		}
+		$this->template->movie = $movie;
 	}
 }
