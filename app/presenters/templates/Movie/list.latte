@@ -6,12 +6,13 @@
 {var $count = 123} {* ha nulla az ertek, akkor nem jelenik meg a skladem*}
 {$count ? skladem}
 
-<ul>
-	{foreach $movies as $movie}
-		<li onclick="alert({$movie->name})"> {$movie['name']}({$movie['year']}</li>
-	{*	<li title="{$movie->name}"> {$movie['name']}({$movie['year']}</li>*}
-	{/foreach}
+{var $display = true}
+
+{*if $display*}
+<ul n:if=$display>
+	<li n:foreach="$movies as $movie"> {$movie->name}({$movie->year})</li>
 </ul>
+{*/if*}
 
 <script n:syntax="double">
 	var name = {{$movie->name}};
