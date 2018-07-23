@@ -8,9 +8,9 @@
 
 {var $display = true}
 
-<ul n:if=$display>
-	<li n:foreach="$movies as $movie">
-		<a href="#" n:inner-if="$iterator->odd">{$movie->name}</a>
+<ul n:inner-foreach="$movies as $movie">
+	<li>
+		<a href="#" n:tag-if="$iterator->odd">{$movie->name}</a>
 	</li>
 </ul>
 
