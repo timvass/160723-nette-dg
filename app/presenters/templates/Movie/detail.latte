@@ -1,12 +1,9 @@
-{block title}Film {$movie->name}
-{/block}
-
 
 {block content}
 
-<h1>Film {$movie->name}</h1>
+<h1>{block title}Film {$movie->name}{/block}</h1>
 
-<p>Rok: {$movie->year}</p>
+<p>Rok: {$movie->year|money}</p>
 
 <p><a n:href="list">zpět na seznam</a></p>
 

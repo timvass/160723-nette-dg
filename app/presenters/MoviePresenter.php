@@ -33,5 +33,9 @@ class MoviePresenter extends Presenter
 			$this->error();
 		}
 		$this->template->movie = $movie;
+
+		$this->template->addFilter('money', function ($val) {
+			return number_format($val, 2, ',', '');
+		});
 	}
 }
