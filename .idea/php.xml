@@ -8,7 +8,6 @@
       <path value="$PROJECT_DIR$/vendor/nette/mail" />
       <path value="$PROJECT_DIR$/vendor/nette/neon" />
       <path value="$PROJECT_DIR$/vendor/nette/di" />
-      <path value="$PROJECT_DIR$/vendor/nette/tester" />
       <path value="$PROJECT_DIR$/vendor/nette/component-model" />
       <path value="$PROJECT_DIR$/vendor/nette/bootstrap" />
       <path value="$PROJECT_DIR$/vendor/nette/caching" />
@@ -22,6 +21,8 @@
       <path value="$PROJECT_DIR$/vendor/nette/http" />
       <path value="$PROJECT_DIR$/vendor/nette/forms" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="/usr/share/php" />
     </include_path>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

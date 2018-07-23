@@ -7,12 +7,14 @@ namespace Model;
 // MovieRepository
 // MovieTable
 
+use Nette\Database\Connection;
+
 class MovieFacade
 {
 	/** @var \PDO */
 	private $db;
 
-	public function __construct(\PDO $db, int $id)
+	public function __construct(Connection $db, int $id)
 	{
 		$this->db = $db;
 	}

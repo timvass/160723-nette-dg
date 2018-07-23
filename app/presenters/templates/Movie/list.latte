@@ -3,22 +3,18 @@
 <title>Seznam filmů | Movies</title>
 <h1>Seznam filmů</h1>
 
-<ul>
-{foreach $movies as $movie}
-<li>{$movie['name']} ({$movie['year']})</li>
-{/foreach}
+{var $count = 123} {* ha nulla az ertek, akkor nem jelenik meg a skladem*}
+{$count ? skladem}
 
+<ul>
+	{foreach $movies as $movie}
+		<li onclick="alert({$movie->name})"> {$movie['name']}({$movie['year']}</li>
+	{*	<li title="{$movie->name}"> {$movie['name']}({$movie['year']}</li>*}
+	{/foreach}
 </ul>
 
+<script>
+	var name = {$movie->name};
+</script>
 
-
-{*
-<ul>
-	<?php foreach ($movies as $movie): ?>
-	<li title='<?=htmlspecialchars($movie['name'], ENT_QUOTES)?>'>
-	<?=htmlspecialchars($movie['name'])?>
-	(<?=htmlspecialchars($movie['year']) ?>)</li>
-	<?php endforeach ?>
-</ul>
-*}
 <footer>Copyright 2018</footer>
