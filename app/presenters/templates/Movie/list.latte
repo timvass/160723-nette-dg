@@ -8,11 +8,11 @@
 
 {var $display = true}
 
-{*if $display*}
 <ul n:if=$display>
-	<li n:foreach="$movies as $movie"> {$movie->name}({$movie->year})</li>
+	<li n:foreach="$movies as $movie" data-id="{$iterator->counter}">
+		{$movie->name}({$movie->year})
+	</li>
 </ul>
-{*/if*}
 
 <script n:syntax="double">
 	var name = {{$movie->name}};

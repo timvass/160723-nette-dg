@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/nettetrening.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nettetrening.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/MovieFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/MovieFacade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" beforeDir="false" afterPath="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/bin/tester" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/bin/tester.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Closure.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Closure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Constant.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Constant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/GlobalFunction.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/GlobalFunction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/CommentAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/CommentAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/FunctionLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/FunctionLike.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/NameAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/NameAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/VisibilityAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/VisibilityAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/contributing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/Collector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/Generators/AbstractGenerator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/Generators/CloverXMLGenerator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/Generators/HtmlGenerator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/Generators/template.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/CodeCoverage/PhpParser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/Assert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/AssertException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/DataProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/DomQuery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/Dumper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/Environment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/FileMock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/FileMutator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/Helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Framework/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/CliTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/CommandLine.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Job.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Output/ConsolePrinter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Output/JUnitPrinter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Output/Logger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Output/TapPrinter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/OutputHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/PhpInterpreter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Runner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/TestHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/Runner/info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/tester" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/src/tester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/tester/tools/create-phar/create-phar.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -146,8 +79,8 @@
       <file leaf-file-name="list.latte" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/list.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="198">
+              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -357,18 +290,18 @@
       <workItem from="1532347474292" duration="7057000" />
       <workItem from="1532356613670" duration="1910000" />
       <workItem from="1532358597407" duration="176000" />
-      <workItem from="1532358792394" duration="2338000" />
+      <workItem from="1532358792394" duration="2948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11481000" />
+    <option name="totallyTimeSpent" value="12091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="450" y="24" width="1150" height="876" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.048913043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.048913043" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -377,7 +310,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34362417" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34362417" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,8 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Movie/list.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="198">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
         </state>
       </provider>
     </entry>
