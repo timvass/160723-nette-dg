@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/presenters/MoviePresenter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/presenters/templates/Movie/list.latte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nettetrening.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nettetrening.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/open-editor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/open-editor.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/log/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.neon" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.neon" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +55,8 @@
       <file leaf-file-name="config.neon" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.neon">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="383">
+              <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -280,12 +260,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532347473056</updated>
       <workItem from="1532347474292" duration="7057000" />
-      <workItem from="1532356613670" duration="1149000" />
+      <workItem from="1532356613670" duration="1270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8206000" />
+    <option name="totallyTimeSpent" value="8327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="415" y="24" width="1185" height="876" extended-state="4" />
@@ -421,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.neon">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="383">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
         </state>
       </provider>
     </entry>

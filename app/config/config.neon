@@ -18,4 +18,8 @@ services:
 
 	db: PDO(%dns%, %user%, %password%)
 
+	movieFacade: Model\MovieFacade( @db )
+
+	moviePresenter: App\Presenters\MoviePresenter(@movieFacade)
+
 
