@@ -12,7 +12,7 @@ class MovieFacade
 	/** @var \PDO */
 	private $db;
 
-	public function __construct(\PDO $db)
+	public function __construct(\PDO $db, int $id)
 	{
 		$this->db = $db;
 	}
