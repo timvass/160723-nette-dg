@@ -1,11 +1,12 @@
-{block content}
+{{block content}
 
 {*cache*}
 <article n:foreach="$posts as $post">
-	<h1><a n:href="Detail: $post->id">{$post->title|truncate:30}</a></h1>
+	<h1><a n:href="Detail: $post->id, $post->title">{$post->title|truncate:30}</a>
+		{*{link Detail: $post->id, ($post->title|truncate:30|webalize)}</h1> *}
 
 	<p>Napsal {$post->author->username} v sekci {$post->category->name}
-	v {$post->published_at|date:'H:i:s'}</p>
+		v {$post->published_at|date:'H:i:s'}</p>
 
 	<p>{$post->content}</p>
 

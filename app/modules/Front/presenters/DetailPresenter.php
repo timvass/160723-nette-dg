@@ -16,12 +16,14 @@ class DetailPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	public function renderDefault(int $id)
+	public function renderDefault(int $id, ?string $slug)
 	{
 		$post = $this->facade->getPublicPostById($id);
 		if (! $post) {
 			$this->error();
 		}
+
+		$this->canonicalize('this', [$id, $post->title]);
 
 		$this->template->post = $post;
 	}
