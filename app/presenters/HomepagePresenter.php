@@ -17,10 +17,13 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 			->addRule($form::BLANK)
 			->setHtmlAttribute('style', 'display:none');
 
-		$form->addText('spam', 'Zadejte slovo povo')
+		$form->addText('spam', 'Zadejte slovo pivo')
 			->setRequired()
-			->addRule($form::EQUAL, null, 'pivo');
+			->addRule($form::EQUAL, null, 'pivo')
+		->setHtmlAttribute('data-spam', 'pivo');
 		//invisible recaptcha componette
+		//data-autocomplete URL
+		//data-provide="datepicker" pro bootstrap datapicker
 
 /*		$form->addPassword('password', 'Heslo:')
 			->setRequired('Zadejte prosim heslo')
@@ -41,6 +44,11 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->onSuccess[] = [$this, 'signFormSucceeded'];
 
 		return $form;
+	}
+
+	function signFormSucceeded($form, $vals)
+	{
+		dump($vals);
 	}
 
 /**	function xxx()
