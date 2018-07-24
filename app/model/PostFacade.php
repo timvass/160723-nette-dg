@@ -43,4 +43,13 @@ class PostFacade
 		return $this->db->table('post');
 		//return $this->db->query('SELECT * FROM post');
 	}
+
+	/** @param int */
+	public function deletePost( $id)
+	{
+		$this->db->table('post')
+		->where('id', $id)
+		->delete();
+	}
+
 }

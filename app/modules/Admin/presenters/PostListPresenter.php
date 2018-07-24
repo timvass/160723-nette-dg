@@ -19,7 +19,8 @@ class PostListPresenter extends BasePresenter
 	}
 
 	/**
-	 * @param \App\Modules\Admin\Presenters\int $page
+	 * @param int
+	 * @throws
 	 */
 	public function renderDefault( $page = 1)
 	{
@@ -40,5 +41,14 @@ class PostListPresenter extends BasePresenter
 		$this->template->page = $page;
 		$this->template->lastPage = $lastPage;
 	}
+
+	/** @param int */
+	function actionDelete($id)
+	{
+		$this->facade->deletePost($id);
+		$this->flashMessage('Post byl smazan');
+		$this->redirect('default');
+	}
+
 
 }
