@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" beforeDir="false" afterPath="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" afterDir="false" />
-    </list>
+    <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,19 +13,22 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.56414765">
+    <splitter split-orientation="vertical" split-proportion="0.7258297">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="HomepagePresenter.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="HomepagePresenter.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+                <state relative-caret-position="308">
+                  <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#289#710#0#PHP" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="@layout.latte" pinned="false" current-in-tab="true">
+          <file leaf-file-name="@layout.latte" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/presenters/templates/@layout.latte">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="108">
@@ -45,8 +44,8 @@
           <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                <state relative-caret-position="54">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -80,8 +79,8 @@
         <option value="$PROJECT_DIR$/app/presenters/templates/Movie/detail.latte" />
         <option value="$PROJECT_DIR$/app/presenters/MoviePresenter.php" />
         <option value="$PROJECT_DIR$/app/config/config.neon" />
-        <option value="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" />
+        <option value="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" />
       </list>
     </option>
   </component>
@@ -260,18 +259,17 @@
       <workItem from="1532358597407" duration="176000" />
       <workItem from="1532358792394" duration="3944000" />
       <workItem from="1532363073055" duration="2875000" />
-      <workItem from="1532418793172" duration="3600000" />
+      <workItem from="1532418793172" duration="4607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19562000" />
+    <option name="totallyTimeSpent" value="20569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="422" y="24" width="1178" height="876" extended-state="4" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24028268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24028268" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -280,7 +278,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23624161" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17181209" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -639,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/@layout.latte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -655,8 +646,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#289#710#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

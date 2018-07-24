@@ -13,7 +13,16 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->addText('name', 'Jmeno')
 		->setRequired('Zadejte prosim jmeno');
 
-		$form->addPassword('password', 'Heslo:')
+		$form->addText('email')
+			->addRule($form::BLANK)
+			->setHtmlAttribute('style', 'display:none');
+
+		$form->addText('spam', 'Zadejte slovo povo')
+			->setRequired()
+			->addRule($form::EQUAL, null, 'pivo');
+		//invisible recaptcha componette
+
+/*		$form->addPassword('password', 'Heslo:')
 			->setRequired('Zadejte prosim heslo')
 		->addRule($form::MIN_LENGTH, null, 8)
 		->addRule($form::PATTERN, 'musi obsahovat cislici', '.*\d.*')
@@ -21,7 +30,7 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 
 		$form->addPassword('password2', 'Heslo jeste jednou:')
 			->addRule($form::EQUAL, 'hesla jsou rozdilne', $form['password'])
-		->setRequired('Zadajte este raz heslo');
+		->setRequired('Zadajte este raz heslo'); */
 
 		$form->addSubmit('send', 'Registrovat');
 
