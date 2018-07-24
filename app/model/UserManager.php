@@ -78,6 +78,8 @@ class UserManager implements Nette\Security\IAuthenticator
 				self::COLUMN_NAME => $username,
 				self::COLUMN_PASSWORD_HASH => Passwords::hash($password),
 				self::COLUMN_EMAIL => $email,
+				'role' => 'user',
+				'created_at' => new \DateTime(),
 			]);
 		} catch (Nette\Database\UniqueConstraintViolationException $e) {
 			throw new DuplicateNameException;

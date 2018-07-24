@@ -29,7 +29,7 @@ class SignPresenter extends BasePresenter
 	{
 		return $this->signInFactory->create(function () {
 			$this->restoreRequest($this->backlink);
-			$this->redirect('Homepage:');
+			$this->redirect('PostList:');
 		});
 	}
 

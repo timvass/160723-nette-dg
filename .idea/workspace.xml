@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nettetrening.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nettetrening.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MyTranslator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.neon" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.neon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms/FormFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/Error4xxPresenter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/ErrorPresenter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/@layout.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/403.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/404.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/405.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/410.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/4xx.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/500.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Error/503.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Closure.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Closure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Constant.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Constant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/GlobalFunction.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/GlobalFunction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/CommentAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/CommentAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/FunctionLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/FunctionLike.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/NameAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/NameAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/VisibilityAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Traits/VisibilityAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/open-editor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/tools/open-in-editor/linux/open-editor.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/www/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Admin/presenters/SignPresenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Admin/presenters/SignPresenter.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,11 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="in.latte" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/Sign/in.latte">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="config.neon" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.neon">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,23 +25,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.local.neon" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.local.neon" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostEditPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/PostEditPresenter.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="SignPresenter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/SignPresenter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostListPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="SignInFormFactory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/forms/SignInFormFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/model/UserManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-399">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adduser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/adduser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="DetailPresenter.php" pinned="false" current-in-tab="false">
@@ -134,6 +103,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/app/modules/Front/presenters</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -166,6 +140,8 @@
         <option value="$PROJECT_DIR$/app/model/UserManager.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/config/config.neon" />
+        <option value="$PROJECT_DIR$/app/modules/Admin/presenters/SignPresenter.php" />
+        <option value="$PROJECT_DIR$/app/adduser.php" />
       </list>
     </option>
   </component>
@@ -211,9 +187,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="548" />
+    <option name="x" value="594" />
     <option name="y" value="24" />
-    <option name="width" value="1052" />
+    <option name="width" value="1006" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -235,78 +211,6 @@
               <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="presenters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="presenters" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Front" type="462c0819:PsiDirectoryNode" />
-              <item name="presenters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Front" type="462c0819:PsiDirectoryNode" />
-              <item name="presenters" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettetrening" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettetrening" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,26 +267,28 @@
       <workItem from="1532363073055" duration="2875000" />
       <workItem from="1532418793172" duration="7552000" />
       <workItem from="1532426734957" duration="3288000" />
-      <workItem from="1532434669617" duration="1176000" />
+      <workItem from="1532434669617" duration="2968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27978000" />
+    <option name="totallyTimeSpent" value="29770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="548" y="24" width="1052" height="876" extended-state="4" />
+    <frame x="594" y="24" width="1006" height="876" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2862823" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33020133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.10067114" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -391,7 +297,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,21 +306,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/MovieFacade.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="1" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -508,13 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -622,7 +505,35 @@
     <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/SignPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/forms/SignInFormFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/adduser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
