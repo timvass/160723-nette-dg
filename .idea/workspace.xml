@@ -21,8 +21,8 @@
           <file leaf-file-name="HomepagePresenter.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+                <state relative-caret-position="378">
+                  <caret line="70" column="52" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -220,12 +220,12 @@
       <workItem from="1532358792394" duration="3944000" />
       <workItem from="1532363073055" duration="2875000" />
       <workItem from="1532418793172" duration="7552000" />
-      <workItem from="1532426734957" duration="72000" />
+      <workItem from="1532426734957" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23586000" />
+    <option name="totallyTimeSpent" value="24096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="422" y="24" width="1178" height="876" extended-state="4" />
@@ -485,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+        <state relative-caret-position="378">
+          <caret line="70" column="52" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="52" />
         </state>
       </provider>
     </entry>

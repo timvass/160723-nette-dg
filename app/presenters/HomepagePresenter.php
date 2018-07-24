@@ -65,6 +65,12 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		->setDisabled(['sk']);
 
 
+		$form->addUpload('avatar')
+			->setRequired(false)
+			//->addRule($form::MIME_TYPE, null, 'image/jpeg')
+			->addRule($form::IMAGE) //jpeg, gif, png
+			->addRule($form::MAX_FILE_SIZE, NULL, 10000000);
+
 
 
 //pozrite sa do examples github.com/nette/forms/tree/master/examples, su tam vyborne priklady
