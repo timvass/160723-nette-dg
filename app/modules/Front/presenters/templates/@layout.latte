@@ -17,6 +17,12 @@
 
 <body>
 	<div class="container">
+
+		<header>
+			<a n:href="List:">úvodní stránka</a>
+			<a n:href=":Admin:PostList:">ADMIN</a>
+			<a n:href="Export:rss">RSS</a>
+		</header>
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
 		{include content}

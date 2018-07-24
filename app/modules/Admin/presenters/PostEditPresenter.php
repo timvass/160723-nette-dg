@@ -22,8 +22,8 @@ class PostEditPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	/** @return  Form */
-	protected function createComponentPostForm()
+
+	protected function createComponentPostForm(): Form
 	{
 		$form = $this->formFactory->create();
 

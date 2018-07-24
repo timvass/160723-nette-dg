@@ -7,14 +7,12 @@ use App\Model\PostFacade;
 
 class PostListPresenter extends BasePresenter
 {
-	const POSTS_PER_PAGE =7;
-
 	/** @var PostFacade */
 	private $facade;
 
-	/** @var int
-	 * @persistent
-	 */
+	const POSTS_PER_PAGE = 7;
+
+//	/** @persistent */
 //	public $page = 1;
 
 
@@ -23,37 +21,32 @@ class PostListPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	/**
-	 * @param int
-	 * @throws
-	 */
-	public function renderDefault( $page = 1)
+	public function renderDefault(int $page = 1)
 	{
-		if($page < 1) {
+		if ($page < 1) {
 			$this->error();
 		}
-
 
 		$posts = $this->facade->getAllPosts();
 		$posts->order('published_at DESC');
 		$posts->page($page, self::POSTS_PER_PAGE, $lastPage);
 
-		if($page > $lastPage){
+		if ($page > $lastPage) {
 			$this->redirect('this', $lastPage);
 		}
+
 
 		$this->template->posts = $posts;
 		$this->template->page = $page;
 		$this->template->lastPage = $lastPage;
 	}
 
-	/** @param int */
-	function handleDelete($id) //signal, je na stranke 'default'
+
+	function handleDelete(int $id) // signal je na strance 'default'
 	{
 		$this->facade->deletePost($id);
-		$this->flashMessage('Post byl smazan');
+		$this->flashMessage('Post byl smazán');
 		$this->redirect('this');
 	}
-
 
 }

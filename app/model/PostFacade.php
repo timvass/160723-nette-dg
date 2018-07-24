@@ -44,12 +44,27 @@ class PostFacade
 		//return $this->db->query('SELECT * FROM post');
 	}
 
-	/** @param int */
-	public function deletePost( $id)
+
+	public function getPublicPosts()
 	{
-		$this->db->table('post')
-		->where('id', $id)
-		->delete();
+		return $this->db->table('post')
+			->where('draft', 0)
+			->where('published_at < NOW()');
 	}
 
+
+	public function getPublicPostById($id)
+	{
+		return $this->getPublicPosts()
+			->where('id', $id)
+			->fetch();
+	}
+
+
+	public function deletePost(int $id)
+	{
+		$this->db->table('post')
+			->where('id', $id)
+			->delete();
+	}
 }

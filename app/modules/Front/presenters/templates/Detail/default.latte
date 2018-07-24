@@ -1,0 +1,11 @@
+{block content}
+
+<article>
+	<h1>{$post->title}</h1>
+
+	<p>Napsal {$post->author->username} v sekci {$post->category->name}
+		v {$post->published_at|date:'H:i:s'}</p>
+
+	<p>{$post->content}</p>
+
+</article>

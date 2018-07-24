@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte" afterDir="false" />
-    </list>
+    <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,8 +130,8 @@
           <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="290">
-                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="344">
+                  <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -258,9 +255,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="254" />
+    <option name="x" value="668" />
     <option name="y" value="24" />
-    <option name="width" value="1354" />
+    <option name="width" value="940" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -423,16 +420,15 @@
       <workItem from="1532418793172" duration="7552000" />
       <workItem from="1532426734957" duration="3288000" />
       <workItem from="1532434669617" duration="7329000" />
-      <workItem from="1532444451704" duration="2505000" />
+      <workItem from="1532444451704" duration="3160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36636000" />
+    <option name="totallyTimeSpent" value="37291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="254" y="24" width="1354" height="876" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.36697248" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -682,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="344">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>

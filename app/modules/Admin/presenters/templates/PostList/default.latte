@@ -7,19 +7,17 @@
 
 <table class="table table-striped">
 	<tr n:foreach="$posts as $post">
-		<td>{$post->title|truncate:30}</td>
+		<td><a n:href=":Front:Detail: $post->id" n:tag-if="!$post->draft">{$post->title|truncate:30}</a></td>
 		<td>{$post->author->username}</td>
-	{*<td>{$post->author_id}</td>*}
 		<td>{$post->category->name}</td>
-{*		<td>{$post->category_id}</td> *}
-		<td>{$post->draft ? Draft}</td>
-		<td>{$post->published_at|date:'d.m.Y H:i'}</td>
+		<td>{$post->draft ? roz}</td>
+		<td>{$post->published_at|date:'H:i:s'}</td>
 		<td>{$post->content|truncate:50}</td>
 		<td><a n:href="delete! $post->id">delete</a></td>
 	</tr>
 </table>
 
 <div>
-	<a n:href="this $page-1" class="btn btn-default" n:if="$page > 1">novejsi</a>
-	<a n:href="this $page+1" class="btn btn-default" n:if="$page < $lastPage">starsi</a>
+	<a n:href="this $page-1" class="btn btn-default" n:if="$page > 1">novější</a>
+	<a n:href="this $page+1" class="btn btn-default" n:if="$page < $lastPage">starší</a>
 </div>

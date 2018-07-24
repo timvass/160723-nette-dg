@@ -1,2 +1,18 @@
 {block content}
-<h1>Uvodni stranka blogu</h1>
+
+{*cache*}
+<article n:foreach="$posts as $post">
+	<h1><a n:href="Detail: $post->id">{$post->title|truncate:30}</a></h1>
+
+	<p>Napsal {$post->author->username} v sekci {$post->category->name}
+	v {$post->published_at|date:'H:i:s'}</p>
+
+	<p>{$post->content}</p>
+
+</article>
+{*/cache*}
+
+<div>
+	<a n:href="this $page-1" class="btn btn-default" n:if="$page > 1">novější</a>
+	<a n:href="this $page+1" class="btn btn-default" n:if="$page < $lastPage">starší</a>
+</div>
