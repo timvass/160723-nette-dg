@@ -81,6 +81,8 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		//v zabezpecene casti webu je to nutnost
 		$form->addProtection();
 
+
+
 		$form->onSuccess[] = [$this, 'signFormSucceeded'];
 
 		return $form;
@@ -88,6 +90,10 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 
 	function signFormSucceeded($form, $vals)
 	{
+		if($vals->avatar->hasFile()) {
+			$vals->avatar->toImage()->resize(100, 100)->sharpen->send();
+			exit;
+		}
 		dump($vals);
 		//$form->addError('Jmeno alebo heslo je neplatne');
 		//$form['name']->addError('Uzivatelske jmeno je obsazene');
