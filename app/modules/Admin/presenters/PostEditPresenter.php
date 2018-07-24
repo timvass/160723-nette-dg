@@ -20,6 +20,21 @@ class PostEditPresenter extends BasePresenter
 	protected function createComponentPostForm()
 	{
 		$form = $this->formFactory->create();
+
+		$form->addSelect('category_id', 'Category:')
+			->setRequired();
+		$form->addText('title', 'Title:')
+			->setRequired()
+			->addRule($form::MAX_LENGTH, null, 100);
+		$form->addTextArea('content', 'Content:')
+			->setRequired();
+		$form->addCheckbox('draft', 'Draft');
+		$form->addSubmit('send');
+		$form->addProtection();
+		$form->onSuccess[] = [$this, 'formSucceeded'];
 		return $form;
 	}
+
+	function formSucceeded()
+	{}
 }
