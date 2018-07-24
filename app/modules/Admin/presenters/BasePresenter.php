@@ -20,9 +20,10 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		}
 	}
 
-	/** @return bool */
-	protected function isAllowed()
+	protected function isAllowed(): bool
 	{
 		return $this->getUser()->isLoggedIn();
+
+		//return $this->getUser()->isInRole('admin');
 	}
 }

@@ -20,8 +20,7 @@ class SignPresenter extends BasePresenter
 		$this->signInFactory = $signInFactory;
 	}
 
-	/** @return bool */
-	protected function isAllowed()
+	protected function isAllowed(): bool
 	{
 		return true;
 	}

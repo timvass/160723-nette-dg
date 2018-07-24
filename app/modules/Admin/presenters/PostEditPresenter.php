@@ -22,12 +22,12 @@ class PostEditPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	/** Form */
+	/** @return  Form */
 	protected function createComponentPostForm()
 	{
 		$form = $this->formFactory->create();
 
-		$form->addSelect('category_id', 'Category:', [])
+		$form->addSelect('category_id', 'Category:', $this->facade->getCategories())
 			->setRequired();
 		$form->addText('title', 'Title:')
 			->setRequired()
@@ -41,6 +41,16 @@ class PostEditPresenter extends BasePresenter
 		return $form;
 	}
 
-	function formSucceeded()
-	{}
+	function formSucceeded(Form $form, $vals)
+	{
+		$this->facade->addPost(
+			$vals->category_id,
+			$vals->title,
+			$vals->content,
+			$vals->draft,
+			$this->getUser()->getId()
+		);
+		$this->flashMessage('Příspěvek byl vložen');
+		$this->redirect('PostList:');
+	}
 }

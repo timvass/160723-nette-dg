@@ -20,7 +20,7 @@ class FormFactory
 		return $form;
 	}
 
-	function makeBootstrap3(Form $form): void
+	function makeBootstrap3(Form $form)
 	{
 		$renderer = $form->getRenderer();
 		$renderer->wrappers['controls']['container'] = null;
@@ -31,6 +31,7 @@ class FormFactory
 		$renderer->wrappers['control']['description'] = 'span class=help-block';
 		$renderer->wrappers['control']['errorcontainer'] = 'span class=help-block';
 		$form->getElementPrototype()->class('form-horizontal');
+
 		foreach ($form->getControls() as $control) {
 			$type = $control->getOption('type');
 			if ($type === 'button') {
@@ -43,5 +44,4 @@ class FormFactory
 			}
 		}
 	}
-
 }

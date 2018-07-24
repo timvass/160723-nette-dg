@@ -4,3 +4,15 @@
 <p>
 	<a n:href="PostEdit:add" class="btn btn-default">přidat článek</a>
 </p>
+
+<table class="table table-striped">
+	<tr n:foreach="$posts as $post">
+		<td>{$post->title|truncate:30}</td>
+		<td>{$post->author->username}</td>
+	{*<td>{$post->author_id}</td>*}
+		<td>{$post->category->name}</td>
+{*		<td>{$post->category_id}</td> *}
+		<td>{$post->draft ? Draft}</td>
+		<td>{$post->published_at|date:'d.m.Y H:i'}</td>
+	</tr>
+</table>
