@@ -7,7 +7,7 @@ use App\Model\PostFacade;
 
 class PostListPresenter extends BasePresenter
 {
-	const POSTS_PER_PAGE =15;
+	const POSTS_PER_PAGE =7;
 
 	/** @var PostFacade */
 	private $facade;
@@ -23,13 +23,22 @@ class PostListPresenter extends BasePresenter
 	 */
 	public function renderDefault( $page = 1)
 	{
+		if($page < 1) {
+			$this->error();
+		}
+
+
 		$posts = $this->facade->getAllPosts();
 		$posts->order('published_at DESC');
-		$posts->page($page, self::POSTS_PER_PAGE);
+		$posts->page($page, self::POSTS_PER_PAGE, $lastPage);
 
+		if($page > $lastPage){
+			$this->redirect('this', $lastPage);
+		}
 
 		$this->template->posts = $posts;
 		$this->template->page = $page;
+		$this->template->lastPage = $lastPage;
 	}
 
 }

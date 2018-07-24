@@ -19,5 +19,5 @@
 
 <div>
 	<a n:href="this $page-1" class="btn btn-default" n:if="$page > 1">novejsi</a>
-	<a n:href="this $page+1" class="btn btn-default">starsi</a>
+	<a n:href="this $page+1" class="btn btn-default" n:if="$page < $lastPage">starsi</a>
 </div>
