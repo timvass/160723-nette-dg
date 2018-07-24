@@ -17,16 +17,6 @@ session:
 services:
 	router: App\RouterFactory::createRouter
 
-	db1: PDO(%dns%, %user%, %password%)
-
-	db2:
-		factory: PDO('sqlite:')
-		autowired: no
-		setup:
-			- setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION)
-			- $prom = 123
-
-	- Model\MovieFacade(..., 123)
 
 #	- PDO(%dns%, %user%, %password%)
 
