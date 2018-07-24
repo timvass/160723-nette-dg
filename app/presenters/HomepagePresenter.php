@@ -13,7 +13,10 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->addText('name', 'Jmeno')
 		->setRequired('Zadejte prosim jmeno');
 
-		$form->addPassword('password', 'Heslo:')->setRequired('Zadejte prosim heslo');
+		$form->addPassword('password', 'Heslo:')
+			->setRequired('Zadejte prosim heslo')
+		->addRule($form::MIN_LENGTH, null, 8)
+		->setOption('description', 'alespon 8 znaku');
 
 		$form->addSubmit('send', 'Registrovat');
 
