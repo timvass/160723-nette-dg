@@ -61,7 +61,8 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->addSelect('country1', 'Zeme:', $countries) ->setPrompt('Zvolte zemi');
 		$form->addRadioList('country2', 'Zeme:', $countries);
 		$form->addMultiSelect('countries1', 'Zeme:', $countries); //mega nem user friendly, ha sokat valaszt ki az ember nincs ralatasa arra hogy mi van kivalasztva es mi nincs, az emberek nem tudjak hogy tobbet valaszthatnak, stb....helyette a Select2 egy remek megoldas https://select2.org/getting-started/basic-usage
-		$form->addCheckboxList('countries2', 'Zeme:', $countries);
+		$form->addCheckboxList('countries2', 'Zeme:', $countries)
+		->setDisabled(['sk']);
 
 
 
