@@ -21,7 +21,7 @@ class PostListPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	/** @param int */
+	/** @return int */
 	public function renderDefault($page = 1)
 	{
 		if ($page < 1) {
@@ -47,6 +47,7 @@ class PostListPresenter extends BasePresenter
 	{
 		$this->facade->deletePost($id);
 		$this->flashMessage('Post byl smazán');
+		$this->payload->necjakadata = [1, 2, true, 'ssss'];
 		$this->redirect('this');
 	}
 

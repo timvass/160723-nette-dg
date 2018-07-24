@@ -7,13 +7,13 @@
 
 <table class="table table-striped">
 	<tr n:foreach="$posts as $post">
-		<td><a n:href=":Front:Detail: $post->id" n:tag-if="!$post->draft">{$post->title|truncate:30}</a></td>
+		<td><a n:href=":Front:Detail: $post->id, $post->title" n:tag-if="!$post->draft">{$post->title|truncate:30}</a></td>
 		<td>{$post->author->username}</td>
 		<td>{$post->category->name}</td>
 		<td>{$post->draft ? roz}</td>
 		<td>{$post->published_at|date:'H:i:s'}</td>
 		<td>{$post->content|truncate:50}</td>
-		<td><a n:href="delete! $post->id">delete</a></td>
+		<td><a n:href="delete! $post->id" data-ajax data-confirm>delete</a></td>
 	</tr>
 </table>
 
