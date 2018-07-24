@@ -19,7 +19,15 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		->addRule($form::PATTERN, 'musi obsahovat cislici', '.*\d.*')
 		->setOption('description', 'alespon 8 znaku a cislici');
 
+		$form->addPassword('password2', 'Heslo jeste jednou:')
+			->addRule($form::EQUAL, 'hesla jsou rozdilne', $form['password'])
+		->setRequired('Zadajte este raz heslo');
+
 		$form->addSubmit('send', 'Registrovat');
+
+		//CSRF elleni vedelem, elkuld egy tokent->input name_token, value, gzip hasznalatakor breeze tamadas meg van oldva? vagy nincs?
+		//v zabezpecene casti webu je to nutnost
+		$form->addProtection();
 
 		$form->onSuccess[] = [$this, 'signFormSucceeded'];
 

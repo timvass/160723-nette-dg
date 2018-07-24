@@ -5,3 +5,19 @@
 <h1 n:block=title>Registrovat</h1>
 
 {control signForm} {* $presenter->getComponent('signForm')->render() *}
+
+<style>
+	.required th label {
+		color: red;
+	}
+
+	.required th label:after {
+		content: '*'
+	}
+
+	.error{
+		dolor:red;
+		display: block;
+	}
+
+</style>
