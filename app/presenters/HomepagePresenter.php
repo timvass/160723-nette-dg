@@ -49,6 +49,8 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 	function signFormSucceeded($form, $vals)
 	{
 		dump($vals);
+		//$form->addError('Jmeno alebo heslo je neplatne');
+		$form['name']->addError('Uzivatelske jmeno je obsazene');
 	}
 
 /**	function xxx()
