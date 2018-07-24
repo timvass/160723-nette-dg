@@ -15,7 +15,7 @@ class PostListPresenter extends BasePresenter
 	/** @var int
 	 * @persistent
 	 */
-	public $page = 1;
+//	public $page = 1;
 
 
 	public function __construct(PostFacade $facade)
@@ -48,11 +48,11 @@ class PostListPresenter extends BasePresenter
 	}
 
 	/** @param int */
-	function actionDelete($id)
+	function handleDelete($id) //signal, je na stranke 'default'
 	{
 		$this->facade->deletePost($id);
 		$this->flashMessage('Post byl smazan');
-		$this->redirect('default');
+		$this->redirect('this');
 	}
 
 

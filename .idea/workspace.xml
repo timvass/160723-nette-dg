@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b3cc92-0733-40df-9b7e-bcd4180c4a7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/model/PostFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/PostFacade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte" afterDir="false" />
     </list>
@@ -17,7 +16,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.352657">
+    <splitter split-orientation="horizontal" split-proportion="0.59250766">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="SignPresenter.php" pinned="false" current-in-tab="false">
@@ -82,8 +81,8 @@
           <file leaf-file-name="PostListPresenter.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="258">
-                  <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+                <state relative-caret-position="492">
+                  <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
                 </state>
               </provider>
             </entry>
@@ -134,8 +133,8 @@
           <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+                <state relative-caret-position="290">
+                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -212,8 +211,8 @@
         <option value="$PROJECT_DIR$/app/config/config.neon" />
         <option value="$PROJECT_DIR$/app/modules/Admin/presenters/PostEditPresenter.php" />
         <option value="$PROJECT_DIR$/app/model/PostFacade.php" />
-        <option value="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" />
         <option value="$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte" />
+        <option value="$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php" />
       </list>
     </option>
   </component>
@@ -424,18 +423,18 @@
       <workItem from="1532418793172" duration="7552000" />
       <workItem from="1532426734957" duration="3288000" />
       <workItem from="1532434669617" duration="7329000" />
-      <workItem from="1532444451704" duration="2048000" />
+      <workItem from="1532444451704" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36179000" />
+    <option name="totallyTimeSpent" value="36636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="254" y="24" width="1354" height="876" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36697248" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36697248" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -444,7 +443,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1785235" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.15436241" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -674,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostEdit/add.latte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -690,8 +682,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/templates/PostList/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="290">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/Admin/presenters/PostListPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
