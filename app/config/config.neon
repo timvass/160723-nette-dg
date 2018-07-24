@@ -1,26 +1,28 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+#
 parameters:
-	dns: 'mysql:dbname=movies;host=10.0.0.201'
-	user: 'root'
-	password: 'xxxx'
+
 
 application:
-	#catchExceptions: yes #zobrazi error presenter
-	errorPresenter: Error
+	errorPresenter: Front:Error
 	mapping:
-		*: App\*Module\Presenters\*Presenter
+		*: App\Modules\*\Presenters\*Presenter
 
 
 session:
 	expiration: 14 days
 
 
+database:
+	dsn: 'mysql:host=10.0.0.201;dbname=blog'
+	user: root
+	password: xxxx
+
+
 services:
+	- App\Model\UserManager
+	- App\Forms\FormFactory
+	- App\Forms\SignInFormFactory
 	router: App\RouterFactory::createRouter
-	- FormFactory
-
-#	- PDO(%dns%, %user%, %password%)
-
-#	- Model\MovieFacade
-
-#	- App\Presenters\MoviePresenter
-

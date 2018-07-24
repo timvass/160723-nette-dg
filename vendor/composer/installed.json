@@ -1,5 +1,36 @@
 [
     {
+        "name": "dg/adminer-custom",
+        "version": "v1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dg/adminer-custom.git",
+            "reference": "fe6d5800d85aef697d110a83aaa863bbd2c2b965"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dg/adminer-custom/zipball/fe6d5800d85aef697d110a83aaa863bbd2c2b965",
+            "reference": "fe6d5800d85aef697d110a83aaa863bbd2c2b965",
+            "shasum": ""
+        },
+        "time": "2018-06-29T10:30:14+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "description": "Customization for Adminer, the best database management tool written in PHP.",
+        "keywords": [
+            "database",
+            "elasticsearch",
+            "mongodb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "postgresql",
+            "sqlite"
+        ]
+    },
+    {
         "name": "latte/latte",
         "version": "v2.4.8",
         "version_normalized": "2.4.8.0",
@@ -862,22 +893,22 @@
     },
     {
         "name": "nette/php-generator",
-        "version": "v3.0.4",
-        "version_normalized": "3.0.4.0",
+        "version": "v2.6.4",
+        "version_normalized": "2.6.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nette/php-generator.git",
-            "reference": "b381ecacbf5a0b5f99cc0b303d5b0578d409f446"
+            "reference": "c1f6b2163c5471c4d94cd94b93362f12bceef183"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nette/php-generator/zipball/b381ecacbf5a0b5f99cc0b303d5b0578d409f446",
-            "reference": "b381ecacbf5a0b5f99cc0b303d5b0578d409f446",
+            "url": "https://api.github.com/repos/nette/php-generator/zipball/c1f6b2163c5471c4d94cd94b93362f12bceef183",
+            "reference": "c1f6b2163c5471c4d94cd94b93362f12bceef183",
             "shasum": ""
         },
         "require": {
             "nette/utils": "^2.4.2 || ~3.0.0",
-            "php": ">=7.0"
+            "php": ">=5.6.0"
         },
         "conflict": {
             "nette/nette": "<2.2"
@@ -886,11 +917,11 @@
             "nette/tester": "^2.0",
             "tracy/tracy": "^2.3"
         },
-        "time": "2018-04-26T16:48:20+00:00",
+        "time": "2018-04-26T16:47:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.0-dev"
+                "dev-master": "2.6-dev"
             }
         },
         "installation-source": "dist",
@@ -915,7 +946,7 @@
                 "homepage": "https://nette.org/contributors"
             }
         ],
-        "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.2 features.",
+        "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.1 features.",
         "homepage": "https://nette.org",
         "keywords": [
             "code",
@@ -1058,6 +1089,69 @@
         ]
     },
     {
+        "name": "nette/safe-stream",
+        "version": "v2.3.3",
+        "version_normalized": "2.3.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nette/safe-stream.git",
+            "reference": "0fcd45ae82be5817f4b3ad25bc8955968f355412"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nette/safe-stream/zipball/0fcd45ae82be5817f4b3ad25bc8955968f355412",
+            "reference": "0fcd45ae82be5817f4b3ad25bc8955968f355412",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "conflict": {
+            "nette/nette": "<2.2"
+        },
+        "require-dev": {
+            "nette/tester": "~1.7",
+            "tracy/tracy": "^2.3"
+        },
+        "time": "2017-07-13T18:20:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/loader.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "David Grudl",
+                "homepage": "https://davidgrudl.com"
+            },
+            {
+                "name": "Nette Community",
+                "homepage": "https://nette.org/contributors"
+            }
+        ],
+        "description": "Nette SafeStream: atomic and safe manipulation with files via native PHP functions.",
+        "homepage": "https://nette.org",
+        "keywords": [
+            "atomic",
+            "filesystem",
+            "nette",
+            "safe"
+        ]
+    },
+    {
         "name": "nette/security",
         "version": "v2.4.3",
         "version_normalized": "2.4.3.0",
@@ -1121,6 +1215,70 @@
             "acl",
             "authorization",
             "nette"
+        ]
+    },
+    {
+        "name": "nette/tester",
+        "version": "v2.0.2",
+        "version_normalized": "2.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nette/tester.git",
+            "reference": "3f273cf0ef82939e5ed07baaa5cf21ea6f657fc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nette/tester/zipball/3f273cf0ef82939e5ed07baaa5cf21ea6f657fc2",
+            "reference": "3f273cf0ef82939e5ed07baaa5cf21ea6f657fc2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2018-06-07T11:24:40+00:00",
+        "bin": [
+            "src/tester"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "David Grudl",
+                "homepage": "https://davidgrudl.com"
+            },
+            {
+                "name": "Nette Community",
+                "homepage": "https://nette.org/contributors"
+            }
+        ],
+        "description": "Nette Tester: enjoyable unit testing in PHP with code coverage reporter. 🍏🍏🍎🍏",
+        "homepage": "https://tester.nette.org",
+        "keywords": [
+            "Xdebug",
+            "assertions",
+            "clover",
+            "code coverage",
+            "nette",
+            "phpdbg",
+            "phpunit",
+            "testing",
+            "unit"
         ]
     },
     {

@@ -5,8 +5,6 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 
-declare(strict_types=1);
-
 namespace Nette\PhpGenerator;
 
 use Nette;
@@ -22,12 +20,12 @@ use Nette\Utils\Strings;
  * - variable amount of use statements
  * - one or more class declarations
  */
-final class PhpNamespace
+class PhpNamespace
 {
 	use Nette\SmartObject;
 
 	private static $keywords = [
-		'string' => 1, 'int' => 1, 'float' => 1, 'bool' => 1, 'array' => 1, 'object' => 1,
+		'string' => 1, 'int' => 1, 'float' => 1, 'bool' => 1, 'array' => 1,
 		'callable' => 1, 'iterable' => 1, 'void' => 1, 'self' => 1, 'parent' => 1,
 	];
 
@@ -44,52 +42,64 @@ final class PhpNamespace
 	private $classes = [];
 
 
-	public function __construct(string $name)
+	/**
+	 * @param  string|null
+	 */
+	public function __construct($name = null)
 	{
-		if ($name !== '' && !Helpers::isNamespaceIdentifier($name)) {
+		if ($name && !Helpers::isNamespaceIdentifier($name)) {
 			throw new Nette\InvalidArgumentException("Value '$name' is not valid name.");
 		}
-		$this->name = $name;
+		$this->name = (string) $name;
 	}
 
 
 	/** @deprecated */
 	public function setName($name)
 	{
-		trigger_error(__METHOD__ . '() is deprecated, use constructor.', E_USER_DEPRECATED);
 		$this->__construct($name);
 		return $this;
 	}
 
 
-	public function getName(): string
+	/**
+	 * @return string|null
+	 */
+	public function getName()
 	{
-		return $this->name;
+		return $this->name ?: null;
 	}
 
 
 	/**
+	 * @param  bool
 	 * @return static
 	 * @internal
 	 */
-	public function setBracketedSyntax(bool $state = true): self
+	public function setBracketedSyntax($state = true)
 	{
-		$this->bracketedSyntax = $state;
+		$this->bracketedSyntax = (bool) $state;
 		return $this;
 	}
 
 
-	public function getBracketedSyntax(): bool
+	/**
+	 * @return bool
+	 */
+	public function getBracketedSyntax()
 	{
 		return $this->bracketedSyntax;
 	}
 
 
 	/**
+	 * @param  string
+	 * @param  string
+	 * @param  string
 	 * @throws InvalidStateException
 	 * @return static
 	 */
-	public function addUse(string $name, string $alias = null, string &$aliasOut = null): self
+	public function addUse($name, $alias = null, &$aliasOut = null)
 	{
 		$name = ltrim($name, '\\');
 		if ($alias === null && $this->name === Helpers::extractNamespace($name)) {
@@ -122,13 +132,17 @@ final class PhpNamespace
 	/**
 	 * @return string[]
 	 */
-	public function getUses(): array
+	public function getUses()
 	{
 		return $this->uses;
 	}
 
 
-	public function unresolveName(string $name): string
+	/**
+	 * @param  string
+	 * @return string
+	 */
+	public function unresolveName($name)
 	{
 		if (isset(self::$keywords[strtolower($name)]) || $name === '') {
 			return $name;
@@ -153,24 +167,35 @@ final class PhpNamespace
 	}
 
 
-	public function addClass(string $name): ClassType
+	/**
+	 * @param  string
+	 * @return ClassType
+	 */
+	public function addClass($name)
 	{
-		if (isset($this->classes[$name])) {
-			trigger_error(__METHOD__ . "() class $name was already added.", E_USER_DEPRECATED);
-			return $this->classes[$name];
+		if (!isset($this->classes[$name])) {
+			$this->addUse($this->name . '\\' . $name);
+			$this->classes[$name] = new ClassType($name, $this);
 		}
-		$this->addUse($this->name . '\\' . $name);
-		return $this->classes[$name] = new ClassType($name, $this);
+		return $this->classes[$name];
 	}
 
 
-	public function addInterface(string $name): ClassType
+	/**
+	 * @param  string
+	 * @return ClassType
+	 */
+	public function addInterface($name)
 	{
 		return $this->addClass($name)->setType(ClassType::TYPE_INTERFACE);
 	}
 
 
-	public function addTrait(string $name): ClassType
+	/**
+	 * @param  string
+	 * @return ClassType
+	 */
+	public function addTrait($name)
 	{
 		return $this->addClass($name)->setType(ClassType::TYPE_TRAIT);
 	}
@@ -179,13 +204,16 @@ final class PhpNamespace
 	/**
 	 * @return ClassType[]
 	 */
-	public function getClasses(): array
+	public function getClasses()
 	{
 		return $this->classes;
 	}
 
 
-	public function __toString(): string
+	/**
+	 * @return string PHP code
+	 */
+	public function __toString()
 	{
 		$uses = [];
 		asort($this->uses);

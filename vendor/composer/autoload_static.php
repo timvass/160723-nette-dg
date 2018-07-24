@@ -4,12 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
+class ComposerStaticInitdeb458a7efa58865cdaa79bbade8633c
 {
     public static $files = array (
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         'a12da592622097d2b593a430e32e13fd' => __DIR__ . '/..' . '/nette/utils/src/loader.php',
         'e7a6fd2e7a869bb207158e9416bdd9b0' => __DIR__ . '/..' . '/nette/application/src/compatibility.php',
+        'a1d067aa2e53d6b47171c03cfc0ea5be' => __DIR__ . '/..' . '/nette/safe-stream/src/loader.php',
     );
 
     public static $classMap = array (
@@ -331,6 +332,34 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Utils\\Strings' => __DIR__ . '/..' . '/nette/utils/src/Utils/Strings.php',
         'Nette\\Utils\\UnknownImageFileException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
+        'Tester\\Assert' => __DIR__ . '/..' . '/nette/tester/src/Framework/Assert.php',
+        'Tester\\AssertException' => __DIR__ . '/..' . '/nette/tester/src/Framework/AssertException.php',
+        'Tester\\CodeCoverage\\Collector' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/Collector.php',
+        'Tester\\CodeCoverage\\Generators\\AbstractGenerator' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/Generators/AbstractGenerator.php',
+        'Tester\\CodeCoverage\\Generators\\CloverXMLGenerator' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/Generators/CloverXMLGenerator.php',
+        'Tester\\CodeCoverage\\Generators\\HtmlGenerator' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/Generators/HtmlGenerator.php',
+        'Tester\\CodeCoverage\\PhpParser' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/PhpParser.php',
+        'Tester\\DataProvider' => __DIR__ . '/..' . '/nette/tester/src/Framework/DataProvider.php',
+        'Tester\\DomQuery' => __DIR__ . '/..' . '/nette/tester/src/Framework/DomQuery.php',
+        'Tester\\Dumper' => __DIR__ . '/..' . '/nette/tester/src/Framework/Dumper.php',
+        'Tester\\Environment' => __DIR__ . '/..' . '/nette/tester/src/Framework/Environment.php',
+        'Tester\\FileMock' => __DIR__ . '/..' . '/nette/tester/src/Framework/FileMock.php',
+        'Tester\\FileMutator' => __DIR__ . '/..' . '/nette/tester/src/Framework/FileMutator.php',
+        'Tester\\Helpers' => __DIR__ . '/..' . '/nette/tester/src/Framework/Helpers.php',
+        'Tester\\Runner\\CliTester' => __DIR__ . '/..' . '/nette/tester/src/Runner/CliTester.php',
+        'Tester\\Runner\\CommandLine' => __DIR__ . '/..' . '/nette/tester/src/Runner/CommandLine.php',
+        'Tester\\Runner\\Job' => __DIR__ . '/..' . '/nette/tester/src/Runner/Job.php',
+        'Tester\\Runner\\OutputHandler' => __DIR__ . '/..' . '/nette/tester/src/Runner/OutputHandler.php',
+        'Tester\\Runner\\Output\\ConsolePrinter' => __DIR__ . '/..' . '/nette/tester/src/Runner/Output/ConsolePrinter.php',
+        'Tester\\Runner\\Output\\JUnitPrinter' => __DIR__ . '/..' . '/nette/tester/src/Runner/Output/JUnitPrinter.php',
+        'Tester\\Runner\\Output\\Logger' => __DIR__ . '/..' . '/nette/tester/src/Runner/Output/Logger.php',
+        'Tester\\Runner\\Output\\TapPrinter' => __DIR__ . '/..' . '/nette/tester/src/Runner/Output/TapPrinter.php',
+        'Tester\\Runner\\PhpInterpreter' => __DIR__ . '/..' . '/nette/tester/src/Runner/PhpInterpreter.php',
+        'Tester\\Runner\\Runner' => __DIR__ . '/..' . '/nette/tester/src/Runner/Runner.php',
+        'Tester\\Runner\\Test' => __DIR__ . '/..' . '/nette/tester/src/Runner/Test.php',
+        'Tester\\Runner\\TestHandler' => __DIR__ . '/..' . '/nette/tester/src/Runner/TestHandler.php',
+        'Tester\\TestCase' => __DIR__ . '/..' . '/nette/tester/src/Framework/TestCase.php',
+        'Tester\\TestCaseException' => __DIR__ . '/..' . '/nette/tester/src/Framework/TestCase.php',
         'Tracy\\Bar' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar.php',
         'Tracy\\BlueScreen' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/BlueScreen.php',
         'Tracy\\Bridges\\Nette\\Bridge' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Nette/Bridge.php',
@@ -350,7 +379,7 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit091ed5d24b4127ffc48411e34be2086f::$classMap;
+            $loader->classMap = ComposerStaticInitdeb458a7efa58865cdaa79bbade8633c::$classMap;
 
         }, null, ClassLoader::class);
     }

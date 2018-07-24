@@ -5,8 +5,6 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 
-declare(strict_types=1);
-
 namespace Nette\PhpGenerator;
 
 use Nette;
@@ -15,18 +13,15 @@ use Nette;
 /**
  * Class method.
  *
- * @property string|null $body
+ * @property string|false $body
  */
-final class Method
+class Method
 {
 	use Nette\SmartObject;
 	use Traits\FunctionLike;
 	use Traits\NameAware;
 	use Traits\VisibilityAware;
 	use Traits\CommentAware;
-
-	/** @var string|null */
-	private $body = '';
 
 	/** @var bool */
 	private $static = false;
@@ -39,30 +34,38 @@ final class Method
 
 
 	/**
-	 * @param  string|array  $method
+	 * @param  callable
 	 * @return static
 	 */
-	public static function from($method): self
+	public static function from($method)
 	{
-		if ($method instanceof \ReflectionMethod) {
-			trigger_error(__METHOD__ . '() accepts only method name.', E_USER_DEPRECATED);
-		} else {
-			$method = Nette\Utils\Callback::toReflection($method);
+		$method = $method instanceof \ReflectionFunctionAbstract ? $method : Nette\Utils\Callback::toReflection($method);
+		if ($method instanceof \ReflectionFunction) {
+			trigger_error('For global functions or closures use Nette\PhpGenerator\GlobalFunction or Nette\PhpGenerator\Closure.', E_USER_DEPRECATED);
+			return (new Factory)->fromFunctionReflection($method);
 		}
 		return (new Factory)->fromMethodReflection($method);
 	}
 
 
-	public function __construct(string $name)
+	/**
+	 * @param  string
+	 */
+	public function __construct($name)
 	{
-		if (!Helpers::isIdentifier($name)) {
+		if ($name === null) {
+			throw new Nette\DeprecatedException('For closures use Nette\PhpGenerator\Closure instead of Nette\PhpGenerator\Method.');
+		} elseif (!Helpers::isIdentifier($name)) {
 			throw new Nette\InvalidArgumentException("Value '$name' is not valid name.");
 		}
 		$this->name = $name;
 	}
 
 
-	public function __toString(): string
+	/**
+	 * @return string  PHP code
+	 */
+	public function __toString()
 	{
 		return Helpers::formatDocComment($this->comment . "\n")
 			. ($this->abstract ? 'abstract ' : '')
@@ -74,7 +77,7 @@ final class Method
 			. $this->name
 			. ($params = $this->parametersToString())
 			. $this->returnTypeToString()
-			. ($this->abstract || $this->body === null
+			. ($this->abstract || $this->body === false
 				? ';'
 				: (strpos($params, "\n") === false ? "\n" : ' ')
 					. "{\n"
@@ -84,22 +87,18 @@ final class Method
 
 
 	/**
-	 * @param  string|null  $code
+	 * @param  string|false
 	 * @return static
 	 */
-	public function setBody($code, array $args = null): self
+	public function setBody($code, array $args = null)
 	{
-		if ($code === false) {
-			$code = null;
-			trigger_error(__METHOD__ . '() use null instead of false', E_USER_DEPRECATED);
-		}
-		$this->body = $args === null || $code === null ? $code : Helpers::formatArgs($code, $args);
+		$this->body = $args === null ? $code : Helpers::formatArgs($code, $args);
 		return $this;
 	}
 
 
 	/**
-	 * @return string|null
+	 * @return string|false
 	 */
 	public function getBody()
 	{
@@ -108,48 +107,60 @@ final class Method
 
 
 	/**
+	 * @param  bool
 	 * @return static
 	 */
-	public function setStatic(bool $state = true): self
+	public function setStatic($state = true)
 	{
-		$this->static = $state;
+		$this->static = (bool) $state;
 		return $this;
 	}
 
 
-	public function isStatic(): bool
+	/**
+	 * @return bool
+	 */
+	public function isStatic()
 	{
 		return $this->static;
 	}
 
 
 	/**
+	 * @param  bool
 	 * @return static
 	 */
-	public function setFinal(bool $state = true): self
+	public function setFinal($state = true)
 	{
-		$this->final = $state;
+		$this->final = (bool) $state;
 		return $this;
 	}
 
 
-	public function isFinal(): bool
+	/**
+	 * @return bool
+	 */
+	public function isFinal()
 	{
 		return $this->final;
 	}
 
 
 	/**
+	 * @param  bool
 	 * @return static
 	 */
-	public function setAbstract(bool $state = true): self
+	public function setAbstract($state = true)
 	{
-		$this->abstract = $state;
+		$this->abstract = (bool) $state;
 		return $this;
 	}
 
 
-	public function isAbstract(): bool
+	/**
+	 * @return bool
+	 */
+	public function isAbstract()
 	{
 		return $this->abstract;
 	}
