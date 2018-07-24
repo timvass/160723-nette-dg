@@ -22,6 +22,7 @@ database:
 
 
 services:
+	- App\Model\PostFacade
 	- App\Model\UserManager
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory

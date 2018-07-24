@@ -10,9 +10,13 @@ class PostEditPresenter extends BasePresenter
 	/** @var FormFactory */
 	private $formFactory;
 
-	public function __construct(FormFactory $formFactory)
+	/** @var PostFacade */
+	private $facade;
+
+	public function __construct(FormFactory $formFactory, PostFacade $facade)
 	{
 		$this->formFactory = $formFactory;
+		$this->facade = $facade;
 	}
 
 
