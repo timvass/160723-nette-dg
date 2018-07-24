@@ -7,6 +7,14 @@ use Nette;
 
 class HomepagePresenter extends Nette\Application\UI\Presenter
 {
+	/** @var \FormFactory */
+	private $formFactory;
+
+	public function __construct(\FormFactory $formFactory)
+	{
+		$this->formFactory = $formFactory;
+	}
+
 	function createComponentSignForm() //Sign uppercase S
 	{
 		$form = new Nette\Application\UI\Form();
@@ -77,16 +85,15 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 
 		$form->addSubmit('send', 'Registrovat');
 
-		//CSRF elleni vedelem, elkuld egy tokent->input name_token, value, gzip hasznalatakor breeze tamadas meg van oldva? vagy nincs?
-		//v zabezpecene casti webu je to nutnost
-		$form->addProtection();
-
-		$form->setTranslator(new \MyTranslator()); //VladaHajda myTranslatora a legjobb az app forditasara
 
 		$form->onSuccess[] = [$this, 'signFormSucceeded'];
 
 		return $form;
 	}
+
+	//bootstrap3 formular eseteben github.com/nette/forms/blob/master/examples/bootstrap3 forms/bootstrap
+	//$form->onRender[] = 'makeBootstrap3';
+	//ked chces aby nieco bolo pravdive na celu situaciu, sprav tovarnu, napr ked chces aby vsetky formulary boli bootstrap3 -> vytvor formFactory!
 
 	function signFormSucceeded($form, $vals)
 	{

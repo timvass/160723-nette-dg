@@ -16,7 +16,7 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
-
+	- FormFactory
 
 #	- PDO(%dns%, %user%, %password%)
 
