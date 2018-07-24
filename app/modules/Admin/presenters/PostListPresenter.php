@@ -21,7 +21,8 @@ class PostListPresenter extends BasePresenter
 		$this->facade = $facade;
 	}
 
-	public function renderDefault(int $page = 1)
+	/** @param int */
+	public function renderDefault($page = 1)
 	{
 		if ($page < 1) {
 			$this->error();
