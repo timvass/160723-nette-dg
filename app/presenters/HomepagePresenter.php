@@ -41,6 +41,33 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 
 		$form->addInteger('age', 'Vek')->addRule($form::RANGE, null, [1, 100]);
 
+/*		$form->addText('test', 'Test')
+			->setRequired(false)
+			->addCondition($form::INTEGER)
+				->addRule($form::MIN, null, 50)
+			->elseCondition()
+				->addRule($form::MIN_LENGTH, null, 3)
+			->endCondition()
+			->addCondition($form['jinak'], $form::FILLED)
+				->addRule($form::PATTERN, 'chybi ti tam nula, machale', '.*0.*');
+*/
+		$countries =[
+			'cs' => 'Ceska republika',
+			'sk' => 'Slovensko',
+			'hu' => 'Madarska republika',
+			'pl' => 'Polsko'
+		];
+
+		$form->addSelect('country1', 'Zeme:', $countries) ->setPrompt('Zvolte zemi');
+		$form->addRadioList('country2', 'Zeme:', $countries);
+		$form->addMultiSelect('countries1', 'Zeme:', $countries); //mega nem user friendly, ha sokat valaszt ki az ember nincs ralatasa arra hogy mi van kivalasztva es mi nincs, az emberek nem tudjak hogy tobbet valaszthatnak, stb....helyette a Select2 egy remek megoldas https://select2.org/getting-started/basic-usage
+		$form->addCheckboxList('countries2', 'Zeme:', $countries);
+
+
+
+
+//pozrite sa do examples github.com/nette/forms/tree/master/examples, su tam vyborne priklady
+
 		$form->addSubmit('send', 'Registrovat');
 
 		//CSRF elleni vedelem, elkuld egy tokent->input name_token, value, gzip hasznalatakor breeze tamadas meg van oldva? vagy nincs?
