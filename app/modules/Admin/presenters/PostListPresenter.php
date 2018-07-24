@@ -12,6 +12,11 @@ class PostListPresenter extends BasePresenter
 	/** @var PostFacade */
 	private $facade;
 
+	/** @var int
+	 * @persistent
+	 */
+	public $page = 1;
+
 
 	public function __construct(PostFacade $facade)
 	{
