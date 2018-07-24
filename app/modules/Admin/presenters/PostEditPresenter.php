@@ -2,8 +2,10 @@
 
 namespace App\Modules\Admin\Presenters;
 
-use \App\Forms\FormFactory;
+use App\Forms\FormFactory;
+use App\Model\PostFacade;
 use Nette\Application\UI\Form;
+
 
 class PostEditPresenter extends BasePresenter
 {
@@ -13,19 +15,19 @@ class PostEditPresenter extends BasePresenter
 	/** @var PostFacade */
 	private $facade;
 
+
 	public function __construct(FormFactory $formFactory, PostFacade $facade)
 	{
 		$this->formFactory = $formFactory;
 		$this->facade = $facade;
 	}
 
-
-	/** @return Form */
+	/** Form */
 	protected function createComponentPostForm()
 	{
 		$form = $this->formFactory->create();
 
-		$form->addSelect('category_id', 'Category:')
+		$form->addSelect('category_id', 'Category:', [])
 			->setRequired();
 		$form->addText('title', 'Title:')
 			->setRequired()
