@@ -81,7 +81,7 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		//v zabezpecene casti webu je to nutnost
 		$form->addProtection();
 
-
+		$form->setTranslator(new \MyTranslator()); //VladaHajda myTranslatora a legjobb az app forditasara
 
 		$form->onSuccess[] = [$this, 'signFormSucceeded'];
 
