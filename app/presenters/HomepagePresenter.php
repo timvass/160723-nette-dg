@@ -35,7 +35,9 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 			->addRule($form::EQUAL, 'hesla jsou rozdilne', $form['password'])
 		->setRequired('Zadajte este raz heslo'); */
 
-		$form->addEmail('email', 'E-mail')->setNullable();//add text helyett es kisbetuvel kezdi. Ha nincs kitoltve, akkor nullara allitja be
+		$form->addEmail('email', 'E-mail')
+			->setEmptyValue('@')
+			->setNullable();//add text helyett es kisbetuvel kezdi. Ha nincs kitoltve, akkor nullara allitja be
 
 		$form->addInteger('age', 'Vek')->addRule($form::RANGE, null, [1, 100]);
 
