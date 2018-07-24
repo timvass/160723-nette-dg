@@ -16,6 +16,7 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->addPassword('password', 'Heslo:')
 			->setRequired('Zadejte prosim heslo')
 		->addRule($form::MIN_LENGTH, null, 8)
+		->addRule($form::PATTERN, 'musi obsahovat cislici', '.*\d.*')
 		->setOption('description', 'alespon 8 znaku');
 
 		$form->addSubmit('send', 'Registrovat');
