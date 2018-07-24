@@ -9,7 +9,8 @@ list(, $username, $password, $email) = $argv;
 
 require 'bootstrap.php';
 
-$manager = new \App\Model\UserManager();
+$manager = $container->getByType(\App\Model\UserManager::class);
+//$manager = new \App\Model\UserManager();
 
 try{
 	$manager->add($username, $email, $password);
