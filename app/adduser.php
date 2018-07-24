@@ -7,6 +7,8 @@ if(count($argv) !== 4) {
 
 list(, $username, $password, $email) = $argv;
 
+require 'bootstrap.php';
+
 $manager = new \App\Model\UserManager();
 
 try{
