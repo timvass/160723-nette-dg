@@ -13,10 +13,10 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 		$form->addText('name', 'Jmeno')
 		->setRequired('Zadejte prosim jmeno');
 
-		$form->addText('email')
+/*		$form->addText('email')
 			->addRule($form::BLANK)
 			->setHtmlAttribute('style', 'display:none');
-
+*/
 		$form->addText('spam', 'Zadejte slovo pivo')
 			->setRequired()
 			->addRule($form::EQUAL, null, 'pivo')
@@ -35,6 +35,10 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 			->addRule($form::EQUAL, 'hesla jsou rozdilne', $form['password'])
 		->setRequired('Zadajte este raz heslo'); */
 
+		$form->addEmail('email', 'E-mail')->setNullable();//add text helyett es kisbetuvel kezdi. Ha nincs kitoltve, akkor nullara allitja be
+
+		$form->addInteger('age', 'Vek')->addRule($form::RANGE, null, [1, 100]);
+
 		$form->addSubmit('send', 'Registrovat');
 
 		//CSRF elleni vedelem, elkuld egy tokent->input name_token, value, gzip hasznalatakor breeze tamadas meg van oldva? vagy nincs?
@@ -50,7 +54,8 @@ class HomepagePresenter extends Nette\Application\UI\Presenter
 	{
 		dump($vals);
 		//$form->addError('Jmeno alebo heslo je neplatne');
-		$form['name']->addError('Uzivatelske jmeno je obsazene');
+		//$form['name']->addError('Uzivatelske jmeno je obsazene');
+		//$this->redirect($this);
 	}
 
 /**	function xxx()
